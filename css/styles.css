@@ -269,7 +269,7 @@ button a {
 
 @media (max-width: 480px) {
   .container-port h2 {
-    margin-left: 65px;
+    margin-left: 60px;
     color: var(--light-black-color);
   }
 }
