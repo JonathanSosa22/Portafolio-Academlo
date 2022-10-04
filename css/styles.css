@@ -305,7 +305,8 @@ button a {
   }
 
   .contacto {
-    gap: 50px;
+    gap: 10px;
+    margin-right: 20px;
   }
 
   .icon-cont h3 {
