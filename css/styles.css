@@ -268,8 +268,9 @@ button a {
 }
 
 @media (max-width: 480px) {
-  .container-port h3 {
+  .container-port h2 {
     margin-left: 65px;
+    color: var(--light-black-color);
   }
 }
 
@@ -317,6 +318,11 @@ button a {
     position: absolute;
     padding-top: 95px;
   }
+
+  .portafolio-hh2 {
+    text-align: center;
+    color: var(--light-black-color);
+  }
 }
 
 @media (min-width: 481px) {
@@ -342,10 +348,6 @@ button a {
     grid-column: 3 / 4;
   }
 
-  .h3-cont {
-    text-align: center;
-  }
-
   .contacto {
     gap: 150px;
   }
@@ -364,6 +366,7 @@ button a {
     margin: auto;
     display: flex;
     justify-content: flex-start;
+    color: var(--light-black-color);
   }
 
   .años-der h3 {
