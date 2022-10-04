@@ -1,0 +1,401 @@
+:root {
+  --violet-color: #8e7bef;
+  --black-color: #222222;
+  --yellow-color: #fcda68;
+  --light-black-color: #423f40;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+}
+
+.nav-desktop .active {
+  color: var(--violet-color);
+}
+
+p {
+  color: var(--light-black-color);
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+span {
+  color: var(--violet-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav */
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px 0 0;
+  }
+
+  .nav-mobile i {
+    color: var(--yellow-color);
+  }
+
+  .container-home {
+    margin: 50px 0;
+  }
+}
+
+@media (min-width: 481px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) {
+  .nav-desktop {
+    width: 80%;
+    padding: 20px;
+    max-width: 905px;
+    min-width: 905px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.nav-desktop a {
+  height: 20px;
+  padding: 20px;
+  color: var(--light-black-color);
+}
+
+.nav-desktop a:hover {
+  color: var(--violet-color);
+}
+
+/* home */
+
+.icon-redes img {
+  background-color: var(--violet-color);
+  border-radius: 100px;
+  margin: 0 10px;
+  padding: 14px;
+}
+
+@media (min-width: 481px) {
+  .img-mobile {
+    display: none;
+  }
+
+  .h1-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-desktop {
+    display: none;
+  }
+
+  .h1-desktop {
+    display: none;
+  }
+
+  .home-p {
+    font-size: 25px;
+  }
+}
+
+button {
+  width: 210px;
+  height: 35px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--violet-color);
+  margin: 20px 0;
+}
+
+button a {
+  color: var(--white-color);
+}
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    margin: auto;
+  }
+
+  .icon-redes {
+    padding: 20px 0;
+  }
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* exp */
+
+.linea {
+  border: 1px solid var(--light-black-color);
+  width: 90%;
+  display: flex;
+}
+
+.exp-hab {
+  background-color: var(--yellow-color);
+}
+
+@media (max-width: 480px) {
+  .content-exp-hab {
+    flex-direction: column;
+    margin: 0 5%;
+  }
+
+  .exp-hab {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .años-der h3 {
+    position: absolute;
+  }
+
+  .años-der p {
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  .linea {
+    margin-top: 20px;
+  }
+}
+
+.años {
+  display: flex;
+  gap: 30px;
+}
+
+/* Habilidades */
+
+.icon-hab {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  gap: 40px;
+}
+
+@media (max-width: 480px) {
+  .icon-hab {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .habilidades h3 {
+    margin-left: 30px;
+  }
+}
+
+/* Portafolio */
+
+.portafolio {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .portafolio {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-port h3 {
+    margin-left: 65px;
+  }
+}
+
+/* contacto */
+
+.icon-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.contacto img {
+  width: 64px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.msj-fin {
+  padding-top: 70px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container-contac h3 {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contacto {
+    gap: 50px;
+  }
+
+  .icon-cont h3 {
+    margin-right: 30px;
+  }
+
+  .icon-cont p {
+    position: absolute;
+    padding-top: 95px;
+  }
+}
+
+@media (min-width: 481px) {
+  .content-exp-hab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .exp-content {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .exp-content p {
+    margin-left: 20px;
+  }
+
+  .exp-años {
+    grid-column: 3 / 4;
+  }
+
+  .h3-cont {
+    text-align: center;
+  }
+
+  .contacto {
+    gap: 150px;
+  }
+
+  .linea {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .portafolio-h3 {
+    width: 80%;
+    padding-left: 100px;
+    padding-top: 60px;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .años-der h3 {
+    position: absolute;
+  }
+
+  .años-der p {
+    position: absolute;
+    margin-top: 50px;
+  }
+
+  .home-p {
+    font-size: 30px;
+    position: relative;
+    bottom: 95px;
+  }
+
+  .container-home {
+    gap: 20px;
+  }
+
+  .h1-desktop {
+    position: relative;
+    bottom: 55px;
+  }
+
+  .home-text p {
+    position: relative;
+    bottom: 55px;
+  }
+
+  .icon-redes {
+    position: relative;
+    bottom: 55px;
+  }
+}
