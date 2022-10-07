@@ -265,6 +265,7 @@ nav a {
 .exp-color {
   background-color: var(--yellow-color);
   height: 450px;
+  min-width: 1200px;
 }
 
 .experiencia {
